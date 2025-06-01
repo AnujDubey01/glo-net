@@ -1,0 +1,398 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1b2b48;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0b295c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: fixed;
+    /* 👈 stays at top even when menu opens */
+    top: 20px;
+    /* 👈 adjust as per your layout */
+    right: 20px;
+    /* 👈 keep it on top-right */
+    z-index: 999;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    display: block;
+    border-radius: 2px;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 40rem;
+}
+
+.navbar .logo img {
+    width: 17rem;
+    height: 7rem;
+    border: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    /* transition: all 0.3s ease; */
+}
+
+.navbar a:hover {
+    font-size: 1.2rem;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #0b295c;
+    color: white;
+}
+
+.hero-text {
+    max-width: 42rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tags span {
+    background: white;
+    color: #0b2a60;
+    padding: 0.2rem 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.tags span:hover {
+    font-size: 1.6rem;
+    transform: scale(1.5);
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+button.primary,
+button.secondary {
+    padding: 0.6rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button.primary {
+    background: white;
+    color: #0b2a60;
+}
+
+button.secondary {
+    background: #102c6f;
+    color: white;
+    border: 1px solid white;
+}
+
+button.primary:hover {
+    background-color: #0b2a60;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+button.secondary:hover {
+    background-color: white;
+    color: #0b2a60;
+    border: none;
+}
+
+.hero-image img {
+    max-width: 600px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about-main {
+    padding: 3rem 2rem;
+    background: #f8f9fa;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 38rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.learn-more {
+    background: #0b2a60;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    max-width: 20rem;
+    margin: 20px;
+}
+
+.about-image img {
+    max-width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Panel Section */
+
+.panel-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-div-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.panel-section-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: #f8f9fa;
+}
+
+.panel-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: #fff;
+}
+
+.panel-text {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.panel-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.panel-text ul {
+    list-style: disc;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.features-icons span {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background: #f1f1f1;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.panel-image img {
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0b2a60;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-left h4,
+.footer-right h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-left p,
+.footer-right p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #0b2a60;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+        width: auto;
+        justify-content: right;
+
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    /* Navbar mobile layout */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    /* Hero section layout */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    /* Panel section */
+    .panel-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .panel-text {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .panel-image img {
+        max-width: 100%;
+    }
+
+    /* Footer layout */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 1rem 0;
+    }
+}
