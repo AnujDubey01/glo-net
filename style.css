@@ -203,6 +203,12 @@ button.secondary:hover {
     margin: 20px;
 }
 
+.learn-more:hover {
+    background: white;
+    color: #0b2a60;
+    border: 2px solid #0b2a60;
+}
+
 /* .button-img {
     display: flex;
     justify-content: space-between;
@@ -321,6 +327,7 @@ footer {
         display: flex;
         padding: 5px;
         margin-right: 10px;
+        position: absolute;
     }
 
     .panel-image img,
@@ -386,9 +393,12 @@ footer {
         padding: 1rem;
     }
 
-    .navbar .logo {
+    .navbar .logo img {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
+        max-width: 14rem;
+        max-height: 6rem;
+
     }
 
     .navbar ul {
@@ -440,12 +450,13 @@ footer {
     }
 
     .about-image {
-        order: 2;
-        margin: 1rem 0;
-        padding: 2rem 1rem;
+        display: none;
+        /* margin: 1rem 0;
+        padding: 2rem 1rem; */
     }
 
-    /* .about .heading {
+    /*
+    .about .heading {
         order: 1;
     }
 
@@ -455,41 +466,79 @@ footer {
 
     .about .about-button {
         order: 4;
-    }
+    } */
 
 
-    .learn-more {
-        order: 4;
-        /* button 
+    /* .learn-more { */
+    /* order: 4; */
+    /* button 
 }
-*/
+
 
     /* Panel section */
 
     .panel-section {
+        display: flex;
         flex-direction: column;
         text-align: center;
         padding: 2rem 1rem;
     }
+
+    .features-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+        grid-template-rows: repeat(3, auto);
+        /* 3 rows */
+        gap: 10px;
+        /* spacing between grid items */
+    }
+
+
+
+    .panel-image {
+        order: 2;
+    }
+
+    .panel-head {
+        order: 1;
+    }
+
+    .features-icons {
+        order: 4;
+    }
+
+    .panel-text {
+        order: 3;
+    }
+
 
     .panel-section-2 {
+        display: flex;
         flex-direction: column;
         text-align: center;
         padding: 2rem 1rem;
     }
 
-    /* .panel-div-2 .panel-image {
-    order: 2;
-}
+    /* .panel-head {
+        order: 1;
+    }
 
-.panel-section-2 .panel-image {
-    order: 2;
-}
+    .panel-image {
+        order: 2;
+    }
 
-.panel-section-2 .panel-text h3 {
-    order: 1;
-} */
+    .panel-text {
+        order: 3;
+    }
 
+    .features-icons {
+        order: 4;
+    }
+
+    .learn {
+        order: 5;
+    } */
 
     .panel-text {
         margin-right: 0;
@@ -498,6 +547,7 @@ footer {
 
     .panel-image img {
         max-width: 100%;
+        margin-top: 10px;
     }
 
     /* Footer layout */
