@@ -202,6 +202,14 @@ button.primary:hover {
     margin-bottom: 1rem;
 }
 
+.learn {
+    margin: 15px;
+}
+
+.learn-more a {
+    margin-bottom: 20px;
+}
+
 .learn-more {
     background: #0b2a60;
     color: white;
@@ -213,7 +221,8 @@ button.primary:hover {
     margin-top: 1.2rem;
     cursor: pointer;
     max-width: 20rem;
-    margin: 20px;
+    text-decoration: none;
+
 }
 
 .learn-more:hover {
@@ -561,6 +570,19 @@ footer {
     .panel-image img {
         max-width: 100%;
         margin-top: 10px;
+    }
+
+    .learn-more {
+        max-width: 15rem;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .learn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Footer layout */
