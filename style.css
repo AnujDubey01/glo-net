@@ -104,6 +104,7 @@ body {
     margin-bottom: 1rem;
 }
 
+
 .tags span {
     background: white;
     color: #0b2a60;
@@ -123,8 +124,26 @@ body {
     margin-top: 1.5rem;
 }
 
-button.primary,
-button.secondary {
+.hero-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.secondary:hover {
+    background-color: white;
+    color: #0b2a60;
+    font-size: 1.15rem;
+    transform: scale(1.15);
+}
+
+button.primary {
     padding: 0.6rem 1.5rem;
     margin-right: 1rem;
     border-radius: 8px;
@@ -153,12 +172,6 @@ button.primary:hover {
     border-radius: 8px;
 }
 
-
-button.secondary:hover {
-    background-color: white;
-    color: #0b2a60;
-    border: none;
-}
 
 .hero-image img {
     max-width: 600px;
